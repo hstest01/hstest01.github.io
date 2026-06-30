@@ -1,9 +1,10 @@
 <html>
-  <head>
-  </head>
-  <bodY>
-    Boan Test
-    <script>alert("This is Xss Test!");</script>
-    <h1>SIONIC_INTERNAL_CANARY_20260630</h1>
-  </bodY>
+  <body>
+    SSTI_CANARY_START
+    literal: {{7*7}}
+    dollar: ${7*7}
+    erb: <%= 7*7 %>
+    thymeleaf: [[${7*7}]]
+    SSTI_CANARY_END
+  </body>
 </html>
